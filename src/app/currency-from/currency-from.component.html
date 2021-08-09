@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <label for="currencyFrom"></label>
+    <input type="number" />
+    <select [(ngModel)]="selectedFromCurr">
+      <option *ngFor="let curr of currenciesFrom" [value]="curr">
+        {{ curr }}
+      </option>
+    </select>
+  </div>
+</div>
